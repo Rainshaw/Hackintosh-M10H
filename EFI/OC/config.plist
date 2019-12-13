@@ -24,11 +24,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>plugin-type=1</string>
+				<string>NO-EC</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
-				<string>SSDT-PLUG.aml</string>
+				<string>SSDT-no-EC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -134,7 +134,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>RUMwXw==</data>
 				<key>Limit</key>
