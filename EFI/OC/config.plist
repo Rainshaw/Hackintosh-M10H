@@ -32,8 +32,7 @@
 			</dict>
 		</array>
 		<key>Block</key>
-		<array>
-		</array>
+		<array/>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -552,24 +551,23 @@
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array>
-		</array>
+		<array/>
 		<key>Boot</key>
 		<dict>
+			<key>ConsoleAttributes</key>
+			<integer>0</integer>
 			<key>HibernateMode</key>
 			<string>None</string>
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>HideSelf</key>
 			<true/>
-			<key>ConsoleAttributes</key>
-			<integer>64</integer>
 			<key>PickerAttributes</key>
 			<integer>0</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
-			<string>Builtin</string>
+			<string>External</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -577,7 +575,7 @@
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>5</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -786,7 +784,8 @@
 			<string>OpenRuntime.efi</string>
 			<string>OpenUsbKbDxe.efi</string>
 			<string>MemoryAllocation.efi</string>
-			<string>OpenCanopy.efi</string>
+			<string>FairyPlus.efi</string>
+			<string>#OpenCanopy.efi</string>
 			<string>#XhciDxe.efi</string>
 			<string>#NvmExpressDxe.efi</string>
 			<string>#HiiDatabase.efi</string>
@@ -831,7 +830,7 @@
 			<key>ReplaceTabWithSpace</key>
 			<false/>
 			<key>Resolution</key>
-			<string>3840x2160</string>
+			<string>Max</string>
 			<key>SanitiseClearScreen</key>
 			<true/>
 			<key>TextRenderer</key>
