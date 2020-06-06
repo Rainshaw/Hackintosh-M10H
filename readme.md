@@ -1,4 +1,10 @@
-i7 8700K - ROG Maximus X Hero Z370 - Vega 56 Hackintosh 
+# i7 8700K - ROG Maximus X Hero Z370 - Vega 56 Hackintosh 
+
+## 使用帮助
+
+点击Clone or Download，将EFI文件夹复制到您的EFI分区，建议修改config.plist中的三码后再使用。您可以使用Clover Configurator方便的生成属于您的三码。
+
+![image-20200606220405173](assets/image-20200606220405173.png)
 
 ## 硬件
 
