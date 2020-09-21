@@ -2,7 +2,7 @@
 
 ## 使用帮助
 
-点击Clone or Download，将EFI文件夹复制到您的EFI分区，建议修改config.plist中的三码后再使用。您可以使用Clover Configurator方便的生成属于您的三码。
+点击Clone or Download，将EFI文件夹复制到您的EFI分区，请修改 config.plist 中的三码后再使用。您可以使用Clover Configurator方便的生成属于您的三码。
 
 ![image-20200606220405173](assets/image-20200606220405173.png)
 
@@ -100,34 +100,39 @@
 
 <img src="assets/image-20200606202335324.png" alt="image-20200606202335324" style="zoom: 25%;" />
 
-| 类型 | 接口编号 | 接口名称            | 类型     | 定制 | 说明                                                         |
-| ---- | -------- | ------------------- | -------- | ---- | ------------------------------------------------------------ |
-| XHC  | 1        | SS01/HS01           | USB3     | SS01 | 只支持USB3                                                   |
-| XHC  | 2        | SS02/HS02           | USB3     | SS02 | 只支持USB3                                                   |
-| XHC  | 3        | SS03/HS03           | USB3     | SS03 | 只支持USB3                                                   |
-| XHC  | 4        | SS04/HS04           | USB3     | SS04 | 只支持USB3                                                   |
-| XHC  | 5        | SS05/HS05           | USB3     | SS05 | 只支持USB3                                                   |
-| XHC  | 6        | SS06/HS06           | USB3     | SS06 | 只支持USB3                                                   |
-| XHC  | 7        | HS07                | Internal | HS07 | 只支持USB2且内建                                             |
-| XHC  | 8        | HS08                | Internal | HS08 | 只支持USB2且内建                                             |
-| XHC  | 9        | HS09                | Internal | HS09 | 只支持USB2且内建                                             |
-| XHC  | 10       | HS10                | Internal | HS10 | 只支持USB2且内建                                             |
-| XHC  |          | HS11                | USB2     | 弃用 | 无法使用的端口                                               |
-| XHC  |          | HS12                | Internal | HS12 | 蓝牙内建                                                     |
-| XHC  |          | HS13                | USB2     | 弃用 | 无法使用的端口                                               |
-| XHC  |          | HS14                | Internal | HS14 | AURA LED Controller内建                                      |
-| XHC  |          | USR1/USR2           |          | 弃用 | Mac不支持，详见[说明](https://dortania.github.io/OpenCore-Post-Install/usb/manual/manual.html) |
-| XHC  |          | SS07/SS08/SS09/SS10 |          | 弃用 | 猜测为主板上的USB3.1Gen2端口，没用到所以弃用                 |
-| PXSX | 12       | PRT1                | TypeC+SW | PRT1 | 后置USB3.1Gen2 TypeC端口                                     |
-| PXSX | 11       | PRT2                | USB3     | PRT2 | 后置USB3.1Gen2 TypeA端口                                     |
-| PXSX | 12       | PRT3                | TypeC+SW | PRT3 | 后置USB3.1Gen2 TypeC端口                                     |
-| PXSX | 11       | PRT4                | USB3     | PRT4 | 后置USB3.1Gen2 TypeA端口的USB2模式                           |
+| 类型 | 接口编号 | 接口名称            | 类型      | 定制      | 说明                                                         |
+| ---- | -------- | ------------------- | --------- | --------- | ------------------------------------------------------------ |
+| XHC  | 1        | SS01/HS01           | USB3/USB2 | SS01/HS01 | 支持USB3/USB2                                                |
+| XHC  | 2        | SS02/HS02           | USB3/USB2 | SS02/HS02 | 支持USB3/USB2                                                |
+| XHC  | 3        | SS03/HS03           | USB3/USB2 | SS03/HS03 | 支持USB3/USB2                                                |
+| XHC  | 4        | SS04/HS04           | USB3/USB2 | SS04/HS04 | 支持USB3/USB2                                                |
+| XHC  | 5        | SS05/HS05           | USB3/USB2 | SS05/HS05 | 支持USB3/USB2                                                |
+| XHC  | 6        | SS06/HS06           | USB3/USB2 | SS06/HS06 | 支持USB3/USB2                                                |
+| XHC  | 7        | HS07                | Internal  | HS07      | 只支持USB2且内建，鼠标                                       |
+| XHC  | 8        | HS08                | Internal  | HS08      | 只支持USB2且内建，键盘                                       |
+| XHC  | 9        | HS09                | Internal  | HS09      | 只支持USB2且内建，无线鼠标接收器                             |
+| XHC  | 10       | HS10                | Internal  | HS0A      | 只支持USB2且内建，无线键盘接收器                             |
+| XHC  |          | HS11                | USB2      | 弃用      | 无法使用的端口                                               |
+| XHC  |          | HS12                | Internal  | HS12      | 蓝牙内建                                                     |
+| XHC  |          | HS13                | USB2      | 弃用      | 无法使用的端口                                               |
+| XHC  |          | HS14                | Internal  | HS14      | AURA LED Controller内建                                      |
+| XHC  |          | USR1/USR2           |           | 弃用      | Mac不支持，详见[说明](https://dortania.github.io/OpenCore-Post-Install/usb/manual/manual.html) |
+| XHC  |          | SS07/SS08/SS09/SS10 |           | 弃用      | 猜测为主板上的USB3.1Gen2端口，没用到所以弃用                 |
+| PXSX | 12       | PRT1                | TypeC+SW  | PRT1      | 后置USB3.1Gen2 TypeC端口                                     |
+| PXSX | 11       | PRT2                | USB3      | PRT2      | 后置USB3.1Gen2 TypeA端口                                     |
+| PXSX | 12       | PRT3                | TypeC+SW  | PRT3      | 后置USB3.1Gen2 TypeC端口                                     |
+| PXSX | 11       | PRT4                | USB3      | PRT4      | 后置USB3.1Gen2 TypeA端口的USB2模式                           |
 
 上表对应于EFI中的USBPort.kext文件，您可自行修改以满足您的个人需求。
 
-值得一提的是7、8、9、10端口只支持USB2.0所以我将他们全部内建，这样可以将无线键鼠的接收器插到上面，当然还可以插入打印机、音响耳机等，依次解决电脑的睡眠即醒情况。
+值得一提的是7、8、9、10端口只支持USB2.0所以我将他们全部内建，这样可以将无线键鼠的接收器插到上面，当然还可以插入打印机、音响耳机等，以此解决电脑的睡眠即醒情况。
 
 ## ChangeLog
+
+### 2020-09-21
+
+1. 修改 usb 定制，添加 usbinjectall.kext
+2. 删除三码，请自行生成
 
 ### 2020-09-18
 
