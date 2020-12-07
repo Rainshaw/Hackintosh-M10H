@@ -1,3 +1,5 @@
+> 升级硬件，此项目停更，谢谢各位的支持
+
 # i7 8700K - ROG Maximus X Hero Z370 - Vega 56 Hackintosh 
 
 ## 使用帮助
